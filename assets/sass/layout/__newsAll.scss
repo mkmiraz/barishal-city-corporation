@@ -1,0 +1,101 @@
+.news_marque{
+    padding: 1rem 0;
+    marquee{
+        font-size: 1.5rem;
+        color: red;
+        span{
+            font-size: 1.6rem;
+            color: #000;
+        }
+    }
+}
+
+
+// /Start news slider
+
+.news_box{
+    display: flex;
+    height: 8rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 3rem 1rem;
+    background: $color_3;
+    border-radius: 3px;
+    .news_slider {
+        flex: 1;
+        height: 5rem;
+        text-align: left;
+        // border: 1px solid red;
+        .news_items{            
+            font-size: 1.4rem !important;
+            font-weight: 500;
+        }
+    }
+
+    h5{
+        margin-top: .3rem;
+        font-size: 1.3rem;
+    }
+    strong{
+        font-size: 1.3rem;
+        padding: 3px 5px;
+        background: #989898;
+    }
+}
+
+
+// NOTIS BORD NEWS
+
+
+.notis_bord{
+    margin-top: 1rem;
+    width: 100%;
+    height: 25rem;
+    background: $color_3;
+    margin-bottom: 2rem;
+    background: $color_3 url(../img/bg_notice_board.png) no-repeat top left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .notis{
+        h3{
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        li {
+            background: url(../img/bullet_tick.png) no-repeat;
+            background-size: .7rem 1rem;
+            background-position: 0px 4px;
+            
+            a{
+                margin-left: 1.2rem;
+                font-size: 1.2rem;
+                line-height: 2.5rem;
+                border-bottom: 1px dotted #989898;
+                color: #000;
+                opacity: .8;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+@media  screen and (max-width: 600px) {
+
+    .notis_bord{
+        height: fit-content;
+        padding: 2rem;
+        .notis{
+            li {
+                background: url(../img/bullet_tick.png) no-repeat;
+                background-size: .7rem 1rem;
+                background-position: 0px 6px;
+                display: flex;
+            }
+        }
+    }
+
+}
